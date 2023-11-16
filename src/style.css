@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Yu Gothic UI Semibold";
+}
+nav {
+  background: radial-gradient(circle at bottom left, black, rgb(143, 8, 60));
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 15px;
+}
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.list {
+  float: right;
+  position: relative;
+  bottom: 23px;
+}
+li.dropMenu {
+  display: none;
+}
+li.dropMenu a {
+  color: rgb(213, 205, 205);
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: dodgerblue;
+  cursor: pointer;
+  transition-duration: 60ms;
+  transform: rotate(2deg);
+  text-decoration: underline;
+  font-size: large;
+}
+h1 {
+  color: rgb(243 139 77);
+  font-size: 44px;
+  margin-bottom: 20px;
+  text-shadow: -46px 27px 3px black;
+}
+h2 {
+  text-align: center;
+  padding-top: 40px;
+  color: tomato;
+}
+h3 {
+  margin: 10px;
+}
+h4 a,
+h4 {
+  margin-top: 41px;
+  color: #2de9ae;
+  text-shadow: -46px 27px 3px black;
+}
+hr {
+  margin: 0 auto;
+  border: none;
+  border-top: dotted;
+  border-width: 7px;
+  width: 10%;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+.btn {
+  padding: 7px;
+  margin: 41px;
+  background-color: rgb(41, 44, 223);
+  border-radius: 8px;
+  border-color: #fff;
+}
+.btn:hover {
+  background-color: rgb(5, 5, 216);
+  width: 126px;
+  height: 42px;
+}
+p,
+span {
+  font-size: 1.05rem;
+  font-family: "Calibri";
+}
+#brand {
+  font-family: "Yu Gothic UI Semibold";
+  font-size: x-large;
+  color: rgb(250, 70, 5);
+}
+#brand:hover,
+#brand:focus {
+  transition-duration: 60ms;
+  transform: rotate(2deg);
+  text-decoration: none;
+}
+.head {
+  text-align: center;
+  background-image: url("../image/-6017015802219311905_121.jpg");
+  background-repeat: none;
+  background-size: auto;
+  background-position: 1px -1406px;
+  padding: 100px 100px 40px 100px;
+  opacity: 4.8;
+}
+.main {
+  background-color: rgb(25, 36, 32);
+  margin-left: auto;
+}
+.card {
+  display: inline-block;
+  width: 274px;
+  margin-left: 50px;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+.card-item {
+  text-align: center;
+}
+.card img:hover {
+  width: 115%;
+  height: 280px;
+  border-radius: 10px;
+  transition-duration: 2s;
+  transform: rotate(5deg);
+}
+.footer {
+  background-color: rgb(22, 21, 21);
+  text-align: center;
+  padding: 40px;
+}
+.footer ul {
+  margin-bottom: 30px;
+}
+.footer ul li {
+  padding-right: 20px;
+  display: inline;
+}
+#back {
+  padding: 13px;
+  margin: -27px;
+  background-color: transparent;
+  border-radius: 101%;
+  float: right;
+}
+#back:hover {
+  background-color: rgb(5, 5, 216);
+  font-size: 20px;
+  width: 50px;
+}
+.dots {
+  display: block;
+}
+.more {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  ul.navbar li:not(:nth-child(0)) {
+    display: none;
+  }
+  ul.navbar li.dropMenu,
+  ul.navar.menu li.dropMenu {
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    /* transition: 9s all; */
+  }
+  ul.navbar li.dropMenu a:hover {
+    font-style: normal;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: dodgerblue;
+    text-decoration: none;
+  }
+  ul#nav.navbar.menu {
+    padding: 30px 0 0;
+  }
+  ul.navbar.menu li {
+    margin: 10px auto;
+    display: block;
+    float: none;
+  }
+  ul.navbar.menu li a {
+    display: block;
+    text-align: left;
+  }
+  .head {
+    background-position: -441px -1406px;
+    font-size: small;
+  }
+  .card {
+    margin: 0 auto;
+    width: 518px;
+    text-align: center;
+  }
+  .card img {
+    text-align: center;
+    width: 100%;
+    height: 300;
+  }
+  .card img:hover {
+    width: 105%;
+  }
+}
+@media screen and (max-width: 605px) {
+  .navbar {
+    display: block;
+  }
+  .nav-collapse {
+    display: none;
+  }
+  .head {
+    background-position: -480px -1249px;
+  }
+  .card {
+    text-align: center;
+    width: 468px;
+  }
+}
